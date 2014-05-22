@@ -49,12 +49,12 @@
         avatar: '',
         content: '「FTT家，開鍋的好所在」　 - 團長對FTT的認知'
       }, {
-        id: 'david60407',
+        id: 'david50407',
         nick: '喜德',
         title: '家貓',
         identity: '',
-        avatar: '',
-        content: ''
+        avatar: 'http://i.imgur.com/w4eq46u.jpg',
+        content: '喵~'
       }, {
         id: 'didi12252001',
         nick: '撒嬌',
