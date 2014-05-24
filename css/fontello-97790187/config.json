@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "css_prefix_text": "ft-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "bc3411a07338a7ae2dc49b9720f792c5",
+      "css": "plurk",
+      "code": 59392,
+      "src": "zocial"
+    }
+  ]
+}
