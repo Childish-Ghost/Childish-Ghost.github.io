@@ -180,6 +180,21 @@
         twitter: ''
         plurk: ''
 
+  * id: 'JokerCatz'
+    nick: 'JokerCatz'
+    title: '中二病阿宅'
+    identity: '全能打雜攻城獅'
+    avatar: 'http://www.gravatar.com/avatar/6e5825db0fd1d7917c87882dace74d07.jpg'
+    content: '歡迎互通有無'
+    social:
+      * github: 'https://github.com/JokerCatz'
+        google: ''
+        facebook: 'https://www.facebook.com/jokercatz'
+        instagram: ''
+        twitter: 'https://twitter.com/lovingcatz'
+        plurk: 'http://www.plurk.com/jokercatz'
+
+
   * id: 'l123868'
     nick: '格格'
     title: ''
@@ -376,19 +391,20 @@
         twitter: ''
         plurk: ''
 
-  * id: 'xatier'
-    nick: '小阿飄'
-    title: '黑飄'
-    identity: ''
-    avatar: ''
-    content: ''
+  * id: 'xatier',
+    nick: '小阿飄',
+    title: '人、人家一點也不黑喔 ^_<',
+    identity: '可樂成癮患者',
+    avatar: 'http://i.imgur.com/UGpdO5D.jpg',
+    content: 'a g33k'
     social:
-      * github: ''
+      * github: 'https://github.com/xatier'
         google: ''
         facebook: ''
         instagram: ''
-        twitter: ''
-        plurk: ''
+        twitter: 'https://twitter.com/xatierlikeLee'
+        plurk: 'http://plurk.com/xatierlike'
+
 
   * id: 'ya'
     nick: '耶姊'
