@@ -178,17 +178,17 @@
   {
     "id": "freetsubasa",
     "nick": "小趴",
-    "title": "",
-    "identity": "",
-    "avatar": "",
-    "content": "",
+    "title": " ",
+    "identity": "打雜血汗工",
+    "avatar": "http://i.imgur.com/IX22VzN.png",
+    "content": "虛擬世界栩栩如劍客，現實生活飄飄若夢蝶",
     "social": {
-      "github": "",
-      "google": "",
-      "facebook": "",
-      "instagram": "",
-      "twitter": "",
-      "plurk": ""
+      "github": "https://github.com/freetsubasa",
+      "google": "https://plus.google.com/u/0/+AnnTsaipapa/posts",
+      "facebook": "https://www.facebook.com/freetsubasa",
+      "instagram": " ",
+      "twitter": "https://twitter.com/freetsubasa",
+      "plurk": "http://www.plurk.com/freetsubasa"
     }
   },
   {
@@ -368,6 +368,22 @@
     }
   },
   {
+    "id": "R6",
+    "nick": "阿飄 a.k.a. R6",
+    "title": "",
+    "identity": "鴿",
+    "avatar": "",
+    "content": "長期旅居第三新北市，除了鼎王團以外不常出現(?)，因為飄字輩人口漸多，近期改以id自稱",
+    "social": {
+      "github": "",
+      "google": "",
+      "facebook": "",
+      "instagram": "",
+      "twitter": "http://twitter.com/itsR6",
+      "plurk": "http://www.plurk.com/itsR6"
+    }
+  },
+  {
     "id": "raincole",
     "nick": "冷雨、妤萱、雨萱",
     "title": "我是學姊控",
@@ -408,6 +424,22 @@
     "content": "神秘的老機團副團長，曾多次協助電資島上的事務。對於電腦硬體有相當強的執著（?）。技能：雪人的祝福，（附加效果 智力-5 魅力-5 大叔+10）。",
     "social": {
       "github": "",
+      "google": "",
+      "facebook": "",
+      "instagram": "",
+      "twitter": "",
+      "plurk": ""
+    }
+  },
+  {
+    "id": "tjjh89017",
+    "nick": "伊達",
+    "title": "",
+    "identity": "",
+    "avatar": "http://www.gravatar.com/avatar/cee80559471f68b7a5134ac8f3e60187.jpg?s=200",
+    "content": "毫無回應，就只是個伊達",
+    "social": {
+      "github": "https://github.com/tjjh89017",
       "google": "",
       "facebook": "",
       "instagram": "",
