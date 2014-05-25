@@ -154,7 +154,7 @@
 
   * id: 'freetsubasa'
     nick: '小趴'
-    title: ' '
+    title: ''
     identity: '打雜血汗工'
     avatar: 'http://i.imgur.com/IX22VzN.png'
     content: '虛擬世界栩栩如劍客，現實生活飄飄若夢蝶'
@@ -162,7 +162,7 @@
       * github: 'https://github.com/freetsubasa'
         google: 'https://plus.google.com/u/0/+AnnTsaipapa/posts'
         facebook: 'https://www.facebook.com/freetsubasa'
-        instagram: ' '
+        instagram: ''
         twitter: 'https://twitter.com/freetsubasa'
         plurk: 'http://www.plurk.com/freetsubasa'
 
