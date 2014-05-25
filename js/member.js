@@ -4,7 +4,7 @@
     var ns_member;
     ns_member = {};
     ns_member.loading = function(member){
-      var origin, social_class, view_social, key, ref$, value, view;
+      var origin, social_class, views, key, ref$, value, view;
       origin = $('#member-list').html();
       if (member.avatar === undefined || member.avatar === '') {
         member.avatar = './images/avastar_default.png';
@@ -17,14 +17,23 @@
         plurk: 'ft-plurk',
         github: 'fa fa-github-square'
       };
-      view_social = '';
+      views = {};
+      views.identity = '';
+      views.title = '';
+      views.social = '';
+      if (member.identity !== '') {
+        views.identity = "<p class=\"mb-identity\"><em>" + member.identity + "</em></p>";
+      }
+      if (member.title !== '') {
+        views.title = "<h5 class=\"mb-title\">" + member.title + "</h5>";
+      }
       for (key in ref$ = member.social) {
         value = ref$[key];
         if (value !== '') {
-          view_social += "<a class=\"social_btn\" href=\"" + value + "\" target=\"_blank\"><i class=\"" + social_class[key] + " fa-lg\"></i></a>";
+          views.social += "<a class=\"social_btn\" href=\"" + value + "\" target=\"_blank\"><i class=\"" + social_class[key] + " fa-lg\"></i></a>";
         }
       }
-      view = "<div class=\"member\"><div class=\"mb-avatar\"><a href=\"" + member.avatar + "\" target=\"_blank\"><img class=\"pure-img-responsive\" src=\"" + member.avatar + "\"></a></div><div class=\"mb-info\"><h4>" + member.nick + " (" + member.id + ")</h4><span class=\"identity\"> <em>" + member.identity + "</em></span><h5 class=\"title\">" + member.title + "</h5><p>" + member.content + "</p><div style=\"margin-bottom: .5em;\">" + view_social + "</div></div></div>";
+      view = "<div class=\"member\"><div class=\"mb-avatar\"><a href=\"" + member.avatar + "\" target=\"_blank\"><img class=\"pure-img-responsive\" src=\"" + member.avatar + "\"></a></div><div class=\"mb-content\"><h4 class=\"mb-name\">" + member.nick + " (" + member.id + ")</h4>" + views.identity + "" + views.title + "<div class=\"mb-info\">" + member.content + "</div><div class=\"mb-social\">" + views.social + "</div></div></div>";
       $('#member-list').html(origin + view);
     };
     ns_member.waterflow = function(){
@@ -34,7 +43,6 @@
         defaultContainerWidth: $('#member-list').width(),
         autoresize: true
       };
-      console.log($('.member').width(), $('#member-list').width());
       $('#member-list').addClass('waterfall');
       $('.waterfall').waterfall(option);
     };
