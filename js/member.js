@@ -24,7 +24,7 @@
           view_social += "<a class=\"social_btn\" href=\"" + value + "\"><i class=\"" + social_class[key] + " fa-lg\"></i></a>";
         }
       }
-      view = "<div class=\"member\"><a href=\"" + member.avatar + "\" ><img class=\"pure-img-responsive\" src=\"" + member.avatar + "\"></a><h4>" + member.nick + " (" + member.id + ")</h4><span class=\"identity\"><em>" + member.identity + "</em></span><h5 class=\"title\">" + member.title + "</h5><p>" + member.content + "</p><div style=\"margin-bottom: .5em;\">" + view_social + "</div></div>";
+      view = "<div class=\"member\"><div class=\"mb-avatar\"><a href=\"" + member.avatar + "\" ><img class=\"pure-img-responsive\" src=\"" + member.avatar + "\"></a></div><div class=\"mb-info\"><h4>" + member.nick + " (" + member.id + ")</h4><span class=\"identity\"> <em>" + member.identity + "</em></span><h5 class=\"title\">" + member.title + "</h5><p>" + member.content + "</p><div style=\"margin-bottom: .5em;\">" + view_social + "</div></div></div>";
       $('#member-list').html(origin + view);
     };
     ns_member.waterflow = function(){
@@ -34,6 +34,7 @@
         defaultContainerWidth: $('#member-list').width(),
         autoresize: true
       };
+      console.log($('.member').width(), $('#member-list').width());
       $('#member-list').addClass('waterfall');
       $('.waterfall').waterfall(option);
     };
