@@ -18,11 +18,11 @@ $(!->
     view_social = ''
     for key, value of member.social
       if value isnt ''
-        view_social += "<a class=\"social_btn\" href=\"#value\"><i class=\"#{social_class[key]} fa-lg\"></i></a>"
+        view_social += "<a class=\"social_btn\" href=\"#value\" target=\"_blank\"><i class=\"#{social_class[key]} fa-lg\"></i></a>"
 
     view = "<div class=\"member\">
               <div class=\"mb-avatar\">
-                <a href=\"#{member.avatar}\" >
+                <a href=\"#{member.avatar}\" target=\"_blank\">
                   <img class=\"pure-img-responsive\" src=\"#{member.avatar}\">
                 </a>
               </div>
