@@ -1,358 +1,254 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="Childish.">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Childish."/>
 
-  <title>CHILDISH.tw</title>
+    <title>CHILDISH.tw</title>
 
+    <!-- Layout and theme -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css"/>
+    <link rel="stylesheet" href="./css/layouts/side-menu.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]>
-  <!-->
-  <link rel="stylesheet" href="./css/layouts/side-menu.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/fontello-97790187/css/fontello.css">
-  <!--<![endif]-->
+    <!-- Social Icon -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/fontello-97790187/css/fontello.css"/>
+  </head>
 
-  <style type="text/css" media="screen">
-    body {
-      background-color: rgba(202, 225, 255, 0.1);
-    }
-    .pure-g img {
-      border-style: solid;
-      border-width: 1px;
-      border-color: rgba(206, 206, 206, 0.5);
-    }
-
-    .social_btn {
-      color: rgb(185, 185, 185);
-      margin-left: .2em;
-      margin-right: .2em;
-    }
-
-    .social_btn :hover {
-      color: black;
-    }
-
-    .member {
-      color: #333;
-      border: 1px solid #ccc;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-transition: background-color .2s ease,border .2s ease;
-      -moz-transition: background-color .2s ease,border .2s ease;
-      -ms-transition: background-color .2s ease,border .2s ease;
-      -o-transition: background-color .2s ease,border .2s ease;
-      transition: background-color .2s ease,border .2s ease;
-      width: 33%;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      overflow: hidden;
-      text-align: center;
-    }
-    .member-list .pure-u-1-3 {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-    }
-
-    .member .mb-avatar {
-      width: 100%;
-      height: 220px;
-      overflow: hidden;
-
-      /* Firefox, Chrome */
-      line-height : 200px;
-
-      /* IE */
-      *font-size : 180px;  /* 200px * 0.9 = 180px */
-      *font-family : Arial;
-    }
-
-    .member img {
-      width: 200px;
-      margin: 10px auto;
-      border-style: solid;
-      border-width: 1px;
-      border-color: rgba(206, 206, 206, 0.5);
-      vertical-align : middle;
-    }
-/*
-    .member p, .member ul, .member li{
-      text-align: left;
-      font-size: 0.8em;
-      line-height: 1.5em;
-    }*/
-
-    .member h3, h4, h5 {
-      margin: 0em 0;
-    }
-
-    .member .mb-name {
-
-    }
-
-    .member .mb-identity {
-      font-size: 0.7em;
-      line-height: 0.9em;
-      margin: 0.2em 0 0.5em 0;
-      padding: 0;
-    }
-
-    .member .mb-identity em {
-      color: #777;
-    }
-
-    .member .mb-title {
-      color: rgb(187, 73, 73);
-    }
-
-    .member .mb-info{
-      margin: 1em;
-      color: rgb(107, 103, 103);
-      text-align: left;
-      font-size: 0.8em;
-      min-height: 1.5em;
-      line-height: 1.5em;
-    }
-
-    .member .mb-info ul{
-      padding-left: 1em;
-    }
-
-    .member .mb-social {
-      margin-bottom: .5em;
-    }
-
-  </style>
-</head>
-
-<body>
-  <div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-      <!-- Hamburger icon -->
-      <span></span>
-    </a>
-
-    <div id="menu">
-      <div class="pure-menu pure-menu-open">
-        <a class="pure-menu-heading" href="#">CHILDISH</a>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#member">Member</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="main">
-      <div class="header">
-        <h1>CHILDISH</h1>
-        <h2>A group of childish ghosts from CCIC World.</h2>
-      </div>
-
-      <div class="content">
-        <div class="pure-g">
-          <div class="pure-u-1-2">
-            <h2 class="content-subhead">《冷雨予薏仁水球文跡》</h2>
-            <p>
-              也許在某個幼稚的年代，<br/>
-              幼稚鬼們將會成為先知一般的存在，<br/>
-              當人們無法解讀古代遺跡水球中的幼稚文字，<br/>
-              幼稚鬼們卻視他們如白話文一般。<br/>
-              天啊！原來你們這麼了不起（拜<br/>
-              <br/>
-              -- raincole
-            </p>
-          </div>
-
-          <div class="pure-u-1-2">
-            <img class="pure-img-responsive" src="./images/card.jpg" alt="NameCard" style="max-width: 90%; height: auto; margin: 5%;">
-          </div>
-        </div>
-
-
-        <h2 class="content-subhead">一群幼稚鬼組成的幼稚鬼團</h2>
-        <p>
-          「就算長大，也不要忘記當初的赤子之心。」崇尚幼稚的我們，希望能讓天真與想像力不會隨著年紀的增長而有所消退。不管人生的路途走了多遠，身邊夥伴分分合合了多少次，甚至開始有了愛與責任，或是遇到了人生的低潮，幼稚鬼之間的情誼，永遠像是當初剛認識一般，真摯與活潑。一起揪團、一起喝酒、一起打打鬧鬧、一起為了突然閃出了的想法熱血奮鬥。永遠不變。
-        </p>
-      </div>
-    </div>
-
-    <div id="about">
-      <div class="header">
-        <h1>About</h1>
-        <h2>Are u kidding? No I am Serious</h2>
-      </div>
-
-      <div class="content">
-        <h2 class="content-subhead">Characteristic</h2>
-        <ul>
-          <li>全名為幼稚鬼團。</li>
-          <li>成員都是幼稚鬼。</li>
-          <li>一群高中電資創性質社團的夥伴共同聚集的團體。</li>
-          <li>據說很愛揪團吃飯，中央吃貨社就是其團體的一個延伸。</li>
-          <li>大部份的人都是程序猿或碼農。</li>
-          <li>沒有輩份，只有友誼。</li>
-        </ul>
-
-        <h2 class="content-subhead">No Organization, Just eat and play</h2>
-        <p>
-          我們不是組織，團長更沒有實權，只有主揪瘋狂的貼吃喝玩樂揪團文。我們沒有什麼入團儀式或門檻，只要跟我們混熟，且自認是幼稚鬼，就可以是團員。沒有特別的規定，只有揪團出去吃吃喝喝和玩樂，偶爾想到什麼有趣的IDEA就一起揪團把他完成，一群既酒肉又熱血的幼稚朋友。
-        </p>
-
-        <div class="pure-g">
-          <div class="pure-u-1-4">
-            <img class="pure-img-responsive" src="./images/activity_01.jpg"></div>
-          <div class="pure-u-1-4">
-            <img class="pure-img-responsive" src="./images/activity_02.jpg"></div>
-          <div class="pure-u-1-4">
-            <img class="pure-img-responsive" src="./images/activity_03.jpg"></div>
-          <div class="pure-u-1-4">
-            <img class="pure-img-responsive" src="./images/activity_04.jpg"></div>
-        </div>
-
-        <h2 class="content-subhead">Try when we still young</h2>
-        <p>
-          想要做一件事情，最重要的不是能力，而是有同一目標與默契的好夥伴。而有些事情，只有在心還年輕時，才會願意去做，做的時候，更要找一群幼稚熱血的夥伴，一起合作，一起努力，才能完成。在這世界上有很多事是值得嘗試的，對，且只有在我們還年輕時才能做。趕快相約身邊的夥伴一起做出你心中一直想要追逐的夢想吧！
-        </p>
-      </div>
-    </div>
-
-    <div id="member">
-      <div class="header">
-        <h1>Member</h1>
-        <h2>You are so childish, aren't you?</h2>
-      </div>
-
-      <div class="content">
-        <h2 class="content-subhead">Member Waterfall</h2>
-        <div id="member-list"></div>
-        <h2 class="content-subhead">Join us!</h2>
-        <p>
-          如同上述說說，只要跟我們混熟，且自認是幼稚鬼，就可以是團員。因為團體結構如此得彈性與鬆散，在上面的名單總會不小心漏掉幾個，或是來不及更新自認為是幼稚鬼的夥伴。當然，我們提供了幾個管道讓您可以將自己的資料加進去，話不多，趕緊點選下列連結，將自己新增上去吧！
-        </p>
-        <ul>
-          <li><a href="https://github.com/Childish-Ghost/Childish-Ghost.github.io/issues/2" target="_blank">團員資料新增申請區</a></li>
-          <li><a href="http://asaph.org/gravatar/">Gravatar 頭像 URL 產生器</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="service">
-      <div class="header">
-        <h1>Service</h1>
-        <h2>Anything is possible.</h2>
-      </div>
-
-      <div class="content">
-        <h2 class="content-subhead">幼稚鬼團基金</h2>
-        <p>
-          幼稚鬼團基金是由幼稚鬼團團員自主性捐贈形成的小額財庫，主要用來支付有關幼稚鬼團相關服務的成本，目前支出主要是在 childish.tw domain的費用。財務主要由團長進行保管，目前尚無另外開戶，僅簡單的使用紅包袋裝好，藏在某個神秘的小地方。有關這筆基金的使用作業，都使用Google Sheets 記錄並且公開，相關資料如下：
-        </p>
-        <ul>
-          <li><a href="https://docs.google.com/spreadsheet/pub?key=0AkpGMm7MSxQhdFo5TXVOSnRXbUhRakVVX3FoVDNJX3c&output=html" target="_blank">財務使用狀況</a></li>
-          <li><a href="https://docs.google.com/forms/d/1f9CB9IOovvyusGeKYIipFSW2MWbQcmXHUTWRHf56N3E/viewform" target="_blank">基金贊助回報表單</a></li>
-        </ul>
-
-        <h2 class="content-subhead">Sub-domain</h2>
-        <p>
-          於2013年12月21日，幼稚鬼團購入 childish.tw 的網域，開放申請 *.childish.tw 這個煞氣的網域，供團員使用，團員可以到下列的表單進行申請。
-        </p>
-        <ul>
-          <li><a href="https://docs.google.com/spreadsheet/ccc?key=0AkpGMm7MSxQhdGJrOXF5bEtXb3hucTk5SGl2Qm55cUE&usp=sharing" target="_blank">網域使用狀況</a></li>
-          <li><a href="https://docs.google.com/forms/d/1jfJxbjyopp6hhX1TcjJU7e_4PAs5YW41VrltJcoHfzI/viewform" target="_blank">sub-domain 申請表單</a></li>
-        </ul>
-
-        <h2 class="content-subhead">Gitlab</h2>
-        <p>
-          這是一個目前在封閉測試中的服務，由Davy（喜德）提供。
-        </p>
-
-        <h2 class="content-subhead">Name Card</h2>
-        <p>
-          在2012年8月，當年COSCUP前一周，幼稚鬼團心血來潮的想要製作屬於我們自己的團名片，此想法一提出，就由主揪瞬生，隨後再當月13日於團版詢問跟團訂購，14日由團長送印，並在16日印刷完成，熱乎乎的名片就出現在COSCUP了呢！目前擁有團名片的團員有cyrandy, davy, freetsubasa, scwuaptx, sntc06, swl, xatier 七人，據說只要收集全套名片就可以召喚神龍了呢！
-        </p>
-        <div class="pure-g">
-          <div class="pure-u-5-8">
-            <p>
-              這款名片的特色是在於個資只有 <em>慣用ID、暱稱、Email、Social Icon</em>！慣用ID、暱稱是由主揪利用手繪板親手寫出，字體獨一無二；Email採用暗灰色系，並且將「@」和「.」替換成「[at]」、「[dot]」，增加開發者的浪漫與氣質；並且將有在使用的社交平台圖示，以同名片色系重製，小巧可愛出現在平片上，總共提供 Facebook、Instagram、Google、Twiiter、Plurk 的圖示！最後在右下角洋洋灑灑的寫下CHILDSH，展露出本名片自我幼稚風格的特色！
-            </p>
-          </div>
-          <div class="pure-u-3-8">
-            <img class="pure-img-responsive" src="./images/name_card_demo.jpg">
-          </div>
-        </div>
-        <p><em>
-          目前團名片製作已絕版，歡迎想要擁有自己團牌的夥伴自行山寨。若需要團名片的psd檔，請私下找團長索取。
-        </em></p>
-
-        <h2 class="content-subhead">Name Sign</h2>
-        <p>
-          自之前2009年團牌誕生以後，在2011年寒假的電資研創寒訓「ee不捨，百年資約」時，出現了大量團牌的降臨在東勢林場。幾乎每個團員都擁有了一個自己的團牌，在每個團牌上還會有一個屬於自己特色的稱號，例如 sntc06（雪人）大大的團牌，上面寫的就是「融化中請稍等」，非常有趣！之後這些團牌的圖檔也全部釋出在幼稚鬼團FB Fans Pages的相簿上，有興趣的團員們可前去觀看，若是當年製作得團牌遺失了，就快點自行重新印製著個幼稚到無法自拔的團牌吧！XDDDDD
-        </p>
-        <div class="pure-g">
-          <div class="pure-u-3-4">
-            <p><em>
-              目前團牌製作已絕版，歡迎想要擁有自己團牌的夥伴自行山寨。
-            </em>
-            <ul>
-              <li><a href="https://www.facebook.com/media/set/?set=a.525962414100471.133649.194136477283068&type=3" target="_blank">團牌相簿</a></li>
-            </ul>
-          </div>
-          <div class="pure-u-1-4">
-            <img class="pure-img-responsive" src="./images/name_sign_demo.jpg">
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-    <div id="contact">
-      <div class="header">
-        <h1>Contact</h1>
-        <h2>Let's CHILDISH!</h2>
-      </div>
-
-      <div class="content">
-
-        <h2 class="content-subhead">Social</h2>
-        <p>
-          目前幼稚鬼團只有粉絲專頁做為對外的社交平台。除此之外，還有在BBS龍夢紀元上有我們的團板。目前我們只會利用這兩個地方公開揪團或是聯絡大家。當然，如果我們想要揪個小團，偶爾還是會私下私訊解決囉～
+  <body>
+    <div id="layout">
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
+      <div id="menu">
+        <div class="pure-menu pure-menu-open">
+          <a class="pure-menu-heading" href="#">CHILDISH</a>
           <ul>
-            <li><a href="https://www.facebook.com/CHILDISH2009" target="_blank">Facebook Fans Page</a></li>
-            <li><a href="telnet://eod.twbbs.org">Childish @ Eod BBS</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#member">Member</a>
+            </li>
+            <li>
+              <a href="#service">Services</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="header">
+          <h1>CHILDISH</h1>
+          <h2>A group of childish ghosts from CCIC World.</h2>
+        </div>
+        <div class="content">
           <div class="pure-g">
             <div class="pure-u-1-2">
-              <img class="pure-img-responsive" src="./images/fans_page.jpg"></div>
+              <h2 class="content-subhead">《冷雨予薏仁水球文跡》</h2>
+              <p>
+                也許在某個幼稚的年代，
+                <br/>
+                幼稚鬼們將會成為先知一般的存在，
+                <br/>
+                當人們無法解讀古代遺跡水球中的幼稚文字，
+                <br/>
+                幼稚鬼們卻視他們如白話文一般。
+                <br/>
+                天啊！原來你們這麼了不起（拜
+                <br/>
+                <br/>
+                -- raincole
+              </p>
+            </div>
             <div class="pure-u-1-2">
-              <img class="pure-img-responsive" src="./images/eod_bbs.jpg"></div>
+              <img class="pure-img-responsive" src="./images/card.jpg" alt="NameCard" style="max-width: 90%; height: auto; margin: 5%;"/>
+            </div>
           </div>
-        </p>
+          <h2 class="content-subhead">一群幼稚鬼組成的幼稚鬼團</h2>
+          <p>
+            「就算長大，也不要忘記當初的赤子之心。」崇尚幼稚的我們，希望能讓天真與想像力不會隨著年紀的增長而有所消退。不管人生的路途走了多遠，身邊夥伴分分合合了多少次，甚至開始有了愛與責任，或是遇到了人生的低潮，幼稚鬼之間的情誼，永遠像是當初剛認識一般，真摯與活潑。一起揪團、一起喝酒、一起打打鬧鬧、一起為了突然閃出了的想法熱血奮鬥。永遠不變。
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <script src="js/ui.js"></script>
-  <script src="./js/jquery-min.js"></script>
-  <script src="./js/zepto.js"></script>
-  <script src="./js/jquery.waterfall.js"></script>
-  <script src="./js/member.js"></script>
-  <script type="text/javascript">
-    $( function(){
+      <div id="about">
+        <div class="header">
+          <h1>About</h1>
+          <h2>Are u kidding? No I am Serious</h2>
+        </div>
+        <div class="content">
+          <h2 class="content-subhead">Characteristic</h2>
+          <ul>
+            <li>全名為幼稚鬼團。</li>
+            <li>成員都是幼稚鬼。</li>
+            <li>一群高中電資創性質社團的夥伴共同聚集的團體。</li>
+            <li>據說很愛揪團吃飯，中央吃貨社就是其團體的一個延伸。</li>
+            <li>大部份的人都是程序猿或碼農。</li>
+            <li>沒有輩份，只有友誼。</li>
+          </ul>
+          <h2 class="content-subhead">No Organization, Just eat and play</h2>
+          <p>
+            我們不是組織，團長更沒有實權，只有主揪瘋狂的貼吃喝玩樂揪團文。我們沒有什麼入團儀式或門檻，只要跟我們混熟，且自認是幼稚鬼，就可以是團員。沒有特別的規定，只有揪團出去吃吃喝喝和玩樂，偶爾想到什麼有趣的IDEA就一起揪團把他完成，一群既酒肉又熱血的幼稚朋友。
+          </p>
+          <div class="pure-g">
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="./images/activity_01.jpg"/>
+            </div>
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="./images/activity_02.jpg"/>
+            </div>
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="./images/activity_03.jpg"/>
+            </div>
+            <div class="pure-u-1-4">
+              <img class="pure-img-responsive" src="./images/activity_04.jpg"/>
+            </div>
+          </div>
+          <h2 class="content-subhead">Try when we still young</h2>
+          <p>
+            想要做一件事情，最重要的不是能力，而是有同一目標與默契的好夥伴。而有些事情，只有在心還年輕時，才會願意去做，做的時候，更要找一群幼稚熱血的夥伴，一起合作，一起努力，才能完成。在這世界上有很多事是值得嘗試的，對，且只有在我們還年輕時才能做。趕快相約身邊的夥伴一起做出你心中一直想要追逐的夢想吧！
+          </p>
+        </div>
+      </div>
 
+      <div id="member">
+        <div class="header">
+          <h1>Member</h1>
+          <h2>You are so childish, aren't you?</h2>
+        </div>
+        <div class="content">
+          <h2 class="content-subhead">Member Waterfall</h2>
+          <div id="member-list"></div>
+          <h2 class="content-subhead">Join us!</h2>
+          <p>
+            如同上述說說，只要跟我們混熟，且自認是幼稚鬼，就可以是團員。因為團體結構如此得彈性與鬆散，在上面的名單總會不小心漏掉幾個，或是來不及更新自認為是幼稚鬼的夥伴。當然，我們提供了幾個管道讓您可以將自己的資料加進去，話不多，趕緊點選下列連結，將自己新增上去吧！
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/Childish-Ghost/Childish-Ghost.github.io/issues/2" target="_blank">團員資料新增申請區</a>
+            </li>
+            <li>
+              <a href="http://asaph.org/gravatar/">Gravatar 頭像 URL 產生器</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    })
-  </script>
+      <div id="service">
+        <div class="header">
+          <h1>Service</h1>
+          <h2>Anything is possible.</h2>
+        </div>
+        <div class="content">
+          <h2 class="content-subhead">幼稚鬼團基金</h2>
+          <p>
+            幼稚鬼團基金是由幼稚鬼團團員自主性捐贈形成的小額財庫，主要用來支付有關幼稚鬼團相關服務的成本，目前支出主要是在 childish.tw domain的費用。財務主要由團長進行保管，目前尚無另外開戶，僅簡單的使用紅包袋裝好，藏在某個神秘的小地方。有關這筆基金的使用作業，都使用Google Sheets 記錄並且公開，相關資料如下：
+          </p>
+          <ul>
+            <li>
+              <a href="https://docs.google.com/spreadsheet/pub?key=0AkpGMm7MSxQhdFo5TXVOSnRXbUhRakVVX3FoVDNJX3c&output=html" target="_blank">財務使用狀況</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/1f9CB9IOovvyusGeKYIipFSW2MWbQcmXHUTWRHf56N3E/viewform" target="_blank">基金贊助回報表單</a>
+            </li>
+          </ul>
+          <h2 class="content-subhead">Sub-domain</h2>
+          <p>
+            於2013年12月21日，幼稚鬼團購入 childish.tw 的網域，開放申請 *.childish.tw 這個煞氣的網域，供團員使用，團員可以到下列的表單進行申請。
+          </p>
+          <ul>
+            <li>
+              <a href="https://docs.google.com/spreadsheet/ccc?key=0AkpGMm7MSxQhdGJrOXF5bEtXb3hucTk5SGl2Qm55cUE&usp=sharing" target="_blank">網域使用狀況</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/1jfJxbjyopp6hhX1TcjJU7e_4PAs5YW41VrltJcoHfzI/viewform" target="_blank">sub-domain 申請表單</a>
+            </li>
+          </ul>
+          <h2 class="content-subhead">Gitlab</h2>
+          <p>
+            這是一個目前在封閉測試中的服務，由Davy（喜德）提供。
+          </p>
+          <h2 class="content-subhead">Name Card</h2>
+          <p>
+            在2012年8月，當年COSCUP前一周，幼稚鬼團心血來潮的想要製作屬於我們自己的團名片，此想法一提出，就由主揪瞬生，隨後再當月13日於團版詢問跟團訂購，14日由團長送印，並在16日印刷完成，熱乎乎的名片就出現在COSCUP了呢！目前擁有團名片的團員有cyrandy, davy, freetsubasa, scwuaptx, sntc06, swl, xatier 七人，據說只要收集全套名片就可以召喚神龍了呢！
+          </p>
+          <div class="pure-g">
+            <div class="pure-u-5-8">
+              <p>
+                這款名片的特色是在於個資只有 <em>慣用ID、暱稱、Email、Social Icon</em>
+                ！慣用ID、暱稱是由主揪利用手繪板親手寫出，字體獨一無二；Email採用暗灰色系，並且將「@」和「.」替換成「[at]」、「[dot]」，增加開發者的浪漫與氣質；並且將有在使用的社交平台圖示，以同名片色系重製，小巧可愛出現在平片上，總共提供 Facebook、Instagram、Google、Twiiter、Plurk 的圖示！最後在右下角洋洋灑灑的寫下CHILDSH，展露出本名片自我幼稚風格的特色！
+              </p>
+            </div>
+            <div class="pure-u-3-8">
+              <img class="pure-img-responsive" src="./images/name_card_demo.jpg"/>
+            </div>
+          </div>
+          <p> <em>目前團名片製作已絕版，歡迎想要擁有自己團牌的夥伴自行山寨。若需要團名片的psd檔，請私下找團長索取。</em>
+          </p>
+          <h2 class="content-subhead">Name Sign</h2>
+          <p>
+            自之前2009年團牌誕生以後，在2011年寒假的電資研創寒訓「ee不捨，百年資約」時，出現了大量團牌的降臨在東勢林場。幾乎每個團員都擁有了一個自己的團牌，在每個團牌上還會有一個屬於自己特色的稱號，例如 sntc06（雪人）大大的團牌，上面寫的就是「融化中請稍等」，非常有趣！之後這些團牌的圖檔也全部釋出在幼稚鬼團FB Fans Pages的相簿上，有興趣的團員們可前去觀看，若是當年製作得團牌遺失了，就快點自行重新印製著個幼稚到無法自拔的團牌吧！XDDDDD
+          </p>
+          <div class="pure-g">
+            <div class="pure-u-3-4">
+              <p>
+                <em>目前團牌製作已絕版，歡迎想要擁有自己團牌的夥伴自行山寨。</em>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/media/set/?set=a.525962414100471.133649.194136477283068&type=3" target="_blank">團牌相簿</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pure-u-1-4">
+                <img class="pure-img-responsive" src="./images/name_sign_demo.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div id="contact">
+          <div class="header">
+            <h1>Contact</h1>
+            <h2>Let's CHILDISH!</h2>
+          </div>
+          <div class="content">
+            <h2 class="content-subhead">Social</h2>
+            <p>
+              目前幼稚鬼團只有粉絲專頁做為對外的社交平台。除此之外，還有在BBS龍夢紀元上有我們的團板。目前我們只會利用這兩個地方公開揪團或是聯絡大家。當然，如果我們想要揪個小團，偶爾還是會私下私訊解決囉～
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/CHILDISH2009" target="_blank">Facebook Fans Page</a>
+                </li>
+                <li>
+                  <a href="http://webchat.freenode.net/?channels=#CHILDISH">#CHILDISH @ Freenode IRC Server</a>
+                </li>
+                <li>
+                  <a href="telnet://eod.twbbs.org">Childish @ Eod BBS</a>
+                </li>
+              </ul>
+              <div class="pure-g">
+                <div class="pure-u-1-2">
+                  <img class="pure-img-responsive" src="./images/fans_page.jpg"/>
+                </div>
+                <div class="pure-u-1-2">
+                  <img class="pure-img-responsive" src="./images/eod_bbs.jpg"/>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/ui.js"></script>
+      <script src="./js/jquery-min.js"></script>
+      <script src="./js/zepto.js"></script>
+      <script src="./js/jquery.waterfall.js"></script>
+      <script src="./js/member.js"></script>
+  </body>
 </html>
