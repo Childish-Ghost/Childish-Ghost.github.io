@@ -26,6 +26,20 @@
         twitter: ''
         plurk: ''
 
+  * id: 'andy810625'
+    nick: '喬巴'
+    title: '什麼注音符號的裏暱稱我才不承認(?)'
+    identity: 'PCSHIC亂入老人'
+    avatar: 'http://www.gravatar.com/avatar/154a3c0bf227abc9e3ee004d2f85158e.png?s=200'
+    content: '團長當初居然只知道我的裏暱稱QQ...'
+    social:
+      * github: 'https://github.com/andy810625'
+        google: 'https://plus.google.com/u/0/105768830160224578783/posts'
+        facebook: 'https://www.facebook.com/andy810625'
+        instagram: 'http://instagram.com/andy810625'
+        twitter: 'https://twitter.com/andy810625'
+        plurk: 'http://www.plurk.com/andy810625'
+
   * id: 'curtisyapp'
     nick: '火柴'
     title: '我是火柴我通吃'
