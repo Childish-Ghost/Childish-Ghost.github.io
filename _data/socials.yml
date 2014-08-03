@@ -1,0 +1,17 @@
+- name: google
+  class: 'fa fa-google-plus-square'
+
+- name: facebook
+  class: 'fa fa-facebook-square'
+
+- name: twitter
+  class: 'fa fa-twitter-square'
+
+- name: instagram
+  class: 'fa fa-instagram'
+  
+- name: plurk
+  class: 'ft-plurk'
+
+- name: github
+  class: 'fa fa-github-square'
