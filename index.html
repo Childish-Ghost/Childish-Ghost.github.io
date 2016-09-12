@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -127,7 +129,38 @@
         </div>
         <div class="content">
           <h2 class="content-subhead">Member Waterfall</h2>
-          <div id="member-list"></div>
+          <div id="member-list">
+            {% for member in site.data.members %}
+            <div class="member">
+              <div class="mb-avatar">
+                <a href="http://www.gravatar.com/avatar/154a3c0bf227abc9e3ee004d2f85158e.png?s=200" target="_blank">
+                  {% if member.avatar and member.avatar != "" %}
+                  <img class="pure-img-responsive" src="{{ member.avatar }}" />
+                  {% else %}
+                  <img class="pure-img-responsive" src="./images/avastar_default.png" />
+                  {% endif %}
+                </a>
+              </div>
+              <div class="mb-content">
+                <h4 class="mb-name">{{ member.nick }} ({{ member.id }})</h4>
+                {% if member.identity and member.identity != "" %}
+                <p class="mb-identity"><em>{{ member.identity }}</em></p>
+                {% endif %}
+                {% if member.title and member.title != "" %}
+                <h5 class="mb-title">{{ member.title }}</h5>
+                {% endif %}
+                <div class="mb-info">{{ member.content }}</div>
+                <div class="mb-social">
+                  {% for social in site.data.socials %}
+                  {% if member.social[social.name] and member.social[social.name] != "" %}
+                  <a class="social_btn" href="{{ member.social[social.name] }}" target="_blank"><i class="{{ social.class }} fa-lg"></i></a>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>  
+            {% endfor %}
+          </div>
           <h2 class="content-subhead">Join us!</h2>
           <p>
             如同上述說說，只要跟我們混熟，且自認是幼稚鬼，就可以是團員。因為團體結構如此得彈性與鬆散，在上面的名單總會不小心漏掉幾個，或是來不及更新自認為是幼稚鬼的夥伴。當然，我們提供了幾個管道讓您可以將自己的資料加進去，話不多，趕緊點選下列連結，將自己新增上去吧！

@@ -3,39 +3,6 @@
   $(function(){
     var ns_member;
     ns_member = {};
-    ns_member.loading = function(member){
-      var origin, social_class, views, key, ref$, value, view;
-      origin = $('#member-list').html();
-      if (member.avatar === undefined || member.avatar === '') {
-        member.avatar = './images/avastar_default.png';
-      }
-      social_class = {
-        google: 'fa fa-google-plus-square',
-        facebook: 'fa fa-facebook-square',
-        twitter: 'fa fa-twitter-square',
-        instagram: 'fa fa-instagram',
-        plurk: 'ft-plurk',
-        github: 'fa fa-github-square'
-      };
-      views = {};
-      views.identity = '';
-      views.title = '';
-      views.social = '';
-      if (member.identity !== '') {
-        views.identity = "<p class=\"mb-identity\"><em>" + member.identity + "</em></p>";
-      }
-      if (member.title !== '') {
-        views.title = "<h5 class=\"mb-title\">" + member.title + "</h5>";
-      }
-      for (key in ref$ = member.social) {
-        value = ref$[key];
-        if (value !== '') {
-          views.social += "<a class=\"social_btn\" href=\"" + value + "\" target=\"_blank\"><i class=\"" + social_class[key] + " fa-lg\"></i></a>";
-        }
-      }
-      view = "<div class=\"member\"><div class=\"mb-avatar\"><a href=\"" + member.avatar + "\" target=\"_blank\"><img class=\"pure-img-responsive\" src=\"" + member.avatar + "\"></a></div><div class=\"mb-content\"><h4 class=\"mb-name\">" + member.nick + " (" + member.id + ")</h4>" + views.identity + "" + views.title + "<div class=\"mb-info\">" + member.content + "</div><div class=\"mb-social\">" + views.social + "</div></div></div>";
-      $('#member-list').html(origin + view);
-    };
     ns_member.waterflow = function(){
       var option;
       option = {
@@ -46,14 +13,6 @@
       $('#member-list').addClass('waterfall');
       $('.waterfall').waterfall(option);
     };
-    ns_member.json_loading = function(){
-      $.getJSON('./js/member_list.json', function(members){
-        ns_member.list = members;
-        ns_member.list.map(ns_member.loading);
-      }).done(function(){
-        ns_member.waterflow();
-      });
-    };
-    ns_member.json_loading();
+    ns_member.waterflow();
   });
 }).call(this);
