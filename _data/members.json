@@ -558,5 +558,21 @@
       "twitter": "",
       "plurk": ""
     }
+  },
+  {
+    "id": "PingNote",
+    "nick": "PN Wu (小平)",
+    "title": "穿著不合身連帽外套的小孩子",
+    "identity": "咪嚕的小平",
+    "avatar": "http://www.gravatar.com/avatar/c8e554d91577a152d5dadfa0a882c2ad.jpg",
+    "content": "平 = {平, 怦, 評, 坪, 伻, 评, 抨, 砰, 秤, 萍, 呯, 岼, 泙, 玶, 枰, 胓, 蚲, 軯, 鲆, 鮃, 駍, 苹, 閛, 匉, 㛁}",
+    "social": {
+      "github": "https://github.com/PingNote",
+        "google": "https://plus.google.com/+PingNote",
+        "facebook": "https://www.facebook.com/PingNote.Wu",
+        "instagram": "",
+        "twitter": "https://twitter.com/PingNote_Wu",
+        "plurk": "https://www.plurk.com/PingNote",
+    }
   }
 ]
